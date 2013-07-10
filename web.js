@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 		response.writehead(200, {"Content-Type":"text/html"});
 		response.write(data);	
 		response.end();
-	}
+	});
 });
 
 var port = process.env.PORT || 5000;
