@@ -5,8 +5,8 @@ var app = express.createServer(express.logger());
 var fs = require("fs");
 
 app.get('/', function(request, response) {
-	fs.readFile("index.html", funtion(error, data) {
-		response.writehead(200, {"Content-Type":"text/html"});
+	fs.readFile("index.html", function(error, data) {
+		response.writeHead(200, {"Content-Type":"text/html"});
 		response.write(data);	
 		response.end();
 	});
